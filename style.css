@@ -78,13 +78,6 @@ body {
   box-sizing: border-box;
   font-size: 18px;
 }
-.todo__item-label_edit {
-  display: none;
-}
-.todo__item-label_complete {
-  text-decoration: line-through;
-  color: #888;
-}
 
 .todo__item-input {
   display: none;
@@ -106,9 +99,7 @@ body {
   width: 318px;
   height: 19px;
 }
-.todo__item-input_edit {
-  display: inline-block;
-}
+
 .todo__item-input:focus {
   color: #333;
 }
@@ -144,4 +135,14 @@ body {
 }
 .todo__item-btn_delete:hover::before {
   transform: rotateZ(0);
+}
+.todo__item_edit .todo__item-label {
+  display: none;
+}
+.todo__item_edit .todo__item-input {
+  display: inline-block;
+}
+.todo__item_complete .todo__item-label {
+  text-decoration: line-through;
+  color: #888;
 }
